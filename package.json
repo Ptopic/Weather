@@ -1,0 +1,31 @@
+{
+  "name": "weather-app-api-test",
+  "version": "1.0.0",
+  "description": "[**API Used:**](https://www.weatherapi.com/ 'Weather api')",
+  "main": "script.js",
+  "scripts": {
+    "start": "concurrently npm:dev:*",
+    "dev:sass": "sass sass/main.scss style/style.css -w",
+    "dev:server": "live-server --browser=opera"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ptopic/Weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ptopic/Weather/issues"
+  },
+  "homepage": "https://github.com/Ptopic/Weather#readme",
+  "dependencies": {
+    "gsap": "^3.10.4",
+    "live-server": "^1.2.2",
+    "moment": "^2.29.4",
+    "sass": "^1.54.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.3.0"
+  }
+}

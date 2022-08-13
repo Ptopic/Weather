@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+		/>
+		<title>Weather app</title>
+		<link rel="stylesheet" href="style/style.css" />
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="bg-view">
+				<!-- ---------- Navbar ---------- -->
+
+				<nav class="navbar grid">
+					<div class="navbar-icon--container">
+						<button class="navbar-icon" onclick="navBarOpen()">
+							<div class="bar1"></div>
+							<div class="bar2"></div>
+						</button>
+					</div>
+
+					<div class="navbar-container hidden">
+						<div class="navbar-icon--dark">
+							<button class="navbar-button" onclick="navBarClose()">
+								<div class="bar1-dark"></div>
+								<div class="bar2-dark"></div>
+							</button>
+						</div>
+						<!-- add later -->
+						<div class="navbar-container-text">
+							<a href="#">Logo</a>
+							<a href="#">Astro data</a>
+							<a href="#">Contact</a>
+						</div>
+					</div>
+				</nav>
+
+				<!-- ---------- Search form ---------- -->
+
+				<section class="input">
+					<form class="input-field">
+						<input
+							type="text"
+							class="input-city"
+							name="enter city"
+							autocomplete="off"
+							placeholder="Enter city"
+						/>
+						<button type="submit" class="input-submit">
+							<img src="./icons/zoom.svg" alt="" class="search-icon" />
+						</button>
+					</form>
+				</section>
+
+				<!-- ---------- API data container ---------- -->
+
+				<section class="data-container">
+					<!-- <div class="data">
+						<img src="./icons/pin.svg" alt="pin" class="data-pin" />
+						<p class="data-name">Split</p>
+					</div>
+					<h4 class="date">Today, Oct 18 9:30</h4>
+
+					<div class="weather-data">
+						<div class="weather-data--left">
+							<h1>20°</h1>
+						</div>
+
+						<div class="weather-data--right">
+							<img
+								class="weather-data--right-icon"
+								src="./icons/day/113.png"
+								alt=""
+							/>
+							<p class="weather-data--right-text">Feels like 30°</p>
+						</div>
+					</div> -->
+				</section>
+
+				<!-- ---------- Weather forcast section ---------- -->
+
+				<section class="forecast-drawer">
+					<div class="forecast-drawer-bar">
+						<div class="forecast-drawer-bar--icon"></div>
+					</div>
+
+					<h3 style="text-align: center">Weather forcast</h3>
+
+					<div class="forecast-data">
+						<!-- <div class="card">
+							<img src="icons/day/113.png" alt="icon" class="center-img" />
+							<p class="secondary margin-buttom" style="color: #90ee90">
+								Current
+							</p>
+							<h2>23°</h2>
+						</div>
+
+						<div class="card">
+							<img src="icons/day/116.png" alt="icon" class="center-img" />
+							<p class="secondary margin-buttom">06:00 AM</p>
+							<h2>23°</h2>
+						</div>
+
+						<div class="card">
+							<img src="icons/day/263.png" alt="icon" class="center-img" />
+							<p class="secondary margin-buttom">07:00 AM</p>
+							<h2>23°</h2>
+						</div>
+
+						<div class="card">
+							<img src="icons/day/113.png" alt="icon" class="center-img" />
+							<p class="secondary margin-buttom">08:00 AM</p>
+							<h2>23°</h2>
+						</div> -->
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="cursor rounded"></div>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+
+		<script src="script.js"></script>
+	</body>
+
+	<!-- <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+
+        <p>body</p>
+        <p class="secondary">secondary</p> -->
+
+	<!-- ----- Footer -> start ----- -->
+
+	<!-- <footer class="footer">
+        <h4 class="footer__heading">Made with ❤ by: <a href="">@topic_02</a></h4>
+    </footer> -->
+
+	<!-- ----- Footer -> end ----- -->
+</html>
